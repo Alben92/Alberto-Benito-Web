@@ -107,8 +107,8 @@ html, body{
     justify-content: space-around;
 }
 .Imagencirculo{
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     border: 2px solid #ffffff;
     align-items: center;
@@ -145,9 +145,9 @@ html, body{
     
 }
 section{
-    padding: 4% 8%;
+    padding: 2% 8%;
     margin-right: 2%;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
 }
 
 .button{
@@ -159,7 +159,6 @@ section{
     padding: 2% 4%;
     font-size: 1.5rem;
     text-align: center;
-    font-weight: 800;
     background-color: transparent;
     transition: 0.2s ease;
 }
@@ -291,8 +290,347 @@ section{
 }
 
 /* SOBRE MI */
+.Texto{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    letter-spacing: .5px;
+    width: 100%;
+}
+.Texto a{
+    text-decoration: none;
+    color: #5bc5f2;
+    font-family: Lato-Bold;
+    transition: .2s ease;
+}
+
+.Texto strong{
+    font-family: Lato-Bold;
+    color: #5bc5f2;
+}
+
+.Texto a:hover {
+    color: #ffffff;
+    background-color: #5bc5f2;
+}
+
+.FotoSkills{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: top;
+    margin-top: 10%;
+}
+
+.ContentFoto{
+    width: 45%;
+    text-align: center;
+}
+
+.FotoPrincipal{
+    width: 75%;
+    border: 2px solid #5bc5f2;
+    border-radius: 0 80px 0 80px;
+}
+
+.GrupoLogos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+.LogoImagen{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.IconWebSVG{
+    width: 50%;
+    margin-bottom: 10%;
+    transition: 2s ease;
+}
+
+.tituloLogo{
+    opacity: 0;
+    margin:  auto;
+    transform: translateY(10px);
+}
+
+.LogoImagen:hover .tituloLogo{
+    opacity: 1;
+    transition: .3s ease;
+    transform: translateY(0px);
+}
+
+.LogoImagen:hover .JqueryLogo path{
+    fill: #0868ac!important;
+    transition: .3s ease;
+
+}
+
+.LogoImagen:hover .CSSLogo path{
+    fill: #264de4!important;
+    transition: .2s ease;
+}
+
+.LogoImagen:hover .JSLogo path{
+    fill: #f7df1e!important;
+    transition: .2s ease;
+}
+
+.LogoImagen:hover .AngularLogo path, .LogoImagen:hover .AngularLogo polygon{
+    fill: #dd1b16!important;
+    transition: .2s ease;
+}
 
 
+.ContentSkills{
+    width: 45%;
+}
+
+.GrupoSkill{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NombreSkill{
+    width: 20%;
+    text-align: right;
+}
+
+.barraAzulSkill{
+    width: 50%;
+    position: relative;
+}
+
+.barraAzulSkill:after{
+    content: '';
+    display: block;
+    height: 100%;
+    background-color: #5bc5f2;
+    border-radius: 0 20px 0 20px;
+    position: absolute;
+    top: 0;
+}
+
+.Html_Skills .barraAzulSkill:after{
+    width: 95%;
+}
+
+.Photoshop_Skills .barraAzulSkill:after, .Illustrator_Skills .barraAzulSkill:after{
+    width: 90%;
+}
+
+.Javascript_Skills .barraAzulSkill:after{
+    width: 75%;
+}
+
+.Jquery_Skills .barraAzulSkill:after{
+    width: 85%;
+}
+
+.Angular_Skills .barraAzulSkill:after{
+    width: 70%;
+}
+
+.Wordpress_Skills .barraAzulSkill:after, .UXUI_Skills .barraAzulSkill:after{
+    width: 80%;
+}
+
+.PorcentajeSkills{
+    width: 20%;
+    text-align: left;
+}
+
+.SectionElementosDisenador{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.SectionElemento{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: auto;
+}
+
+.imagenSectionelemento{
+    border: 2px solid #5bc5f2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin: 6% auto;
+    border-radius: 0 20px 0 20px;
+    transition: .2s ease;
+}
+
+.imagenSectionelemento:hover{
+    border: 2px solid #ffffff;
+}
+
+.LogoDisenoSVG{
+    height: 30px;
+}
+
+.imagenSectionelemento:hover .LogoDisenoSVG{
+    height: 32px;
+} 
+.imagenSectionelemento:hover .LogoDisenoSVG path, .imagenSectionelemento:hover .LogoDisenoSVG circle, .imagenSectionelemento:hover .LogoDisenoSVG rect{
+    fill: #ffffff !important;
+
+}
+
+.SectionElemento h4{
+    height: 10%;
+    text-align: center;
+    font-family: Lato-Bold;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+.SectionElemento p{
+    margin: auto;
+    height: 55%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    letter-spacing: .5px;
+    width: 100%;
+}
+.Descargar_button{
+    margin: 4% auto;
+    width: 20%;
+    display: block;
+}
+
+/* Proyectos */
+.GrupoProyectos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.ProyectoCompleto{
+    width: 45%;
+    margin: 4% 0;
+}
+
+.ProyectoCompleto img{
+    width:100%;
+    border: 3px solid #5bc5f2;
+    border-radius: 0 40px 0 40px;
+}
+
+.ProyectoCompleto h4{
+    font-size: 1.6rem;
+    font-family: Lato-Bold;
+    letter-spacing: 1px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.LogosProyectos{
+    display: flex;
+    justify-content: center;
+}
+
+.ImagencirculoProyecto{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    align-items: center;
+    display: flex;
+    background-color: transparent;
+    transition: 0.2s ease;
+    margin: 0 4%;
+}
+
+.ImagencirculoProyecto svg{
+    width: 40%;
+}
+
+.VerGaleria{
+    width: 50%;
+    margin-top: 4%;
+    font-family: Lato-Thin;
+}
+
+.ImagencirculoProyecto:hover{
+    background-color: #ffffff;
+    border: 2px solid #5bc5f2;
+
+}
+
+.ImagencirculoProyecto:hover .IconoSVG path {
+    fill:#5bc5f2!important
+}
+
+.ImagencirculoProyecto:hover .IconoSVG {
+    width: 55%;
+}
+
+/* Contacto */
+
+.Preguntar_button{
+    width: 50%;
+    font-family: Lato-Thin;
+    display: block;
+    margin: 10% auto;
+}
+
+.Datoscontacto{
+    display: flex;
+    justify-content: space-between;
+}
+.ContactoTexto{
+    width: 45%;
+}
+
+.TextoContacto{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+.EmailContacto{
+    font-size: 1.6rem;
+    font-family: Lato-Bold;
+    color: #5bc5f2;
+    text-decoration: none;
+}
+
+.EmailContacto:hover{
+    background-color:#5bc5f2;
+    color: #ffffff;
+}
+
+.imgContacto{
+    width: 45%;
+}
+.imgContacto img{
+    width: 100%;
+}
 
 /* FOOTER */
 .footerFinal{
@@ -309,3 +647,7 @@ section{
     margin: 0;
 }
 
+
+.ListaToDo{
+    display: none;
+}
