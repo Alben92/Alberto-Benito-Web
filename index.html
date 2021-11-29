@@ -32,11 +32,16 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     
 </head>
 
 <body>
     <nav class="menu-Left" id="header">
+
+        <div class="MenuClose">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" style="fill:#ffffff;" version="1.1" viewBox="0 0 512 512" xml:space="preserve"><path d="M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4  L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1  c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1  c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z"/></svg>
+        </div>
 
         <div class="LogoAB">
             <a id="homeTome" class="Linkhome" href="#MainContent">
@@ -47,9 +52,9 @@
 
         <div class="MenuMain">
             <ul class="listadoMenu">
-                <li class="ListMenu"><a class="LinkMenu" href="#Sobremi">Sobre mí</a></li>
-                <li class="ListMenu"><a class="LinkMenu" href="#Proyectos">Proyectos</a></li>
-                <li class="ListMenu"><a class="LinkMenu" href="#Contacto">Contacto</a></li>
+                <li class="ListMenu"><a class="LinkMenu" id="SobremiMenu" href="#Sobremi">Sobre mí</a></li>
+                <li class="ListMenu"><a class="LinkMenu" id="ProyectosMenu" href="#Proyectos">Proyectos</a></li>
+                <li class="ListMenu"><a class="LinkMenu" id="ContactoMenu" href="#Contacto">Contacto</a></li>
             </ul>
         </div>
 
@@ -60,7 +65,7 @@
                 </a>
             </div>
             <div class="imagenLinkedin Imagencirculo">
-                <a>
+                <a href="https://www.linkedin.com/in/alberto-benito-su%C3%A1rez" target="_blank">
                     <svg  class="IconoSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.77 44"><path class="white" d="M.36,44H10.2V13H.36Z" style="fill:#fff"/><path class="white" d="M17.15,12.07H27.64L27,16.24h.11c2.23-2.42,4.42-4.17,8.17-4.17,5.23,0,12.51,2.84,12.51,11.49V44H37.93V26.46c0-3.08-1.94-6-5.11-6a6.32,6.32,0,0,0-5.84,6V44H17.15Z" style="fill:#fff"/><path class="white" d="M10.56,5.28A5.28,5.28,0,1,1,5.28,0,5.27,5.27,0,0,1,10.56,5.28Z" style="fill:#fff"/></svg>
                 </a>
             </div>
@@ -69,6 +74,12 @@
     </nav>
     <main class="contentMain" id="MainContent">
 
+        <div class="cursor"></div>
+        <div class="Flecha-Up" ></div>
+        <div class="MenuOpen">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style=" fill:#ffffff;"><path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"></path></svg>
+        </div>
+
         <section class="Home">
             <div class="cuadroHome">
 
@@ -76,7 +87,7 @@
                     <span class="hola_header_title">Hola!</span>
                     <h1 class="tituloPrincipal">Me llamo <strong>Alberto Benito</strong></h1>
                     <p class="header_subtitle">Bienvenido a mi portfolio y cv en línea</p>
-                    <a class="header__button button" href="">Saber más</a>
+                    <a class="header__button button" href="#Sobremi">Saber más</a>
                 </div>
             </div>
             <div class="flechas-animadas">
@@ -87,7 +98,7 @@
         </section>
 
         <section class="Sobremi" id="Sobremi">
-            <div class="TituloSection">
+            <div class="TituloSection Fade-In">
                 <h2>Sobre mí</h2>
                 <span class="barraAzulTitulo">&nbsp;</span>
             </div>
@@ -95,7 +106,7 @@
             <p class="Texto TextSobremi">Desarrollador front-end y especialista en UX y diseño gráfico, El área principal de mi experiencia es el <strong>desarrollo front-end</strong>, HTML, CSS, JS, creación de aplicaciones web y elementos audiovisuales interactivos. Tuve la oportunidad de trabajar para algunas de las empresas más grandes de Francia y España, desde agencias de publicidad, eventos, formaciones Online, agencias de marketing, escuelas de educación, comercio electrónico, entre otros.</p>
             <p class="Texto TextSobremi">Visita mi pagina de <a href="https://www.linkedin.com/in/alberto-benito-su%C3%A1rez" target="_blank">Linkedin</a> para más detalles o pongase en contacto conmigo.</p>
 
-            <div class="FotoSkills">
+            <div class="FotoSkills Fade-In">
 
                 <div class="ContentFoto">
                     <img src="images/FotoPrincipal.jpg" class="FotoPrincipal">
@@ -120,45 +131,45 @@
                 </div>
 
                 <div class="ContentSkills">
-                    <div class="GrupoSkill">
-                        <div class="Html_Skills Skills">
+                    <div class="GrupoSkill barra">
+                        <div class="Skills">
                             <p class="NombreSkill">Html & CSS</p>
-                            <span class="barraAzulSkill">&nbsp;</span>
+                            <span class="barraAzulSkill "><div class="BarraAzulFinal Html_Skills">&nbsp;</div></span>
                             <p class="PorcentajeSkills">95%</p>
                         </div>
-                        <div class="Photoshop_Skills Skills">
-                            <p class="NombreSkill">Photoshop</p>
-                            <span class="barraAzulSkill">&nbsp;</span>
+                        <div class=" Skills">
+                            <p class="NombreSkill ">Photoshop</p>
+                            <span class="barraAzulSkill "><div class="BarraAzulFinal Photoshop_Skills">&nbsp;</div></span>
                             <p class="PorcentajeSkills">90%</p>
                         </div>
-                        <div class="Illustrator_Skills Skills">
+                        <div class=" Skills">
                             <p class="NombreSkill">Illustrator</p>
-                            <span class="barraAzulSkill">&nbsp;</span>
+                            <span class="barraAzulSkill "><div class="BarraAzulFinal Illustrator_Skills">&nbsp;</div></span>
                             <p class="PorcentajeSkills">90%</p>
                         </div>
-                        <div class="Javascript_Skills Skills">
+                        <div class=" Skills">
                             <p class="NombreSkill">Javascript</p>
-                            <span class="barraAzulSkill">&nbsp;</span>
+                            <span class="barraAzulSkill "><div class="BarraAzulFinal Javascript_Skills">&nbsp;</div></span>
                             <p class="PorcentajeSkills">75%</p>
                         </div>
-                        <div class="Jquery_Skills Skills">
+                        <div class=" Skills">
                             <p class="NombreSkill">Jquery</p>
-                            <span class="barraAzulSkill">&nbsp;</span>
+                            <span class="barraAzulSkill "><div class="BarraAzulFinal Jquery_Skills">&nbsp;</div></span>
                             <p class="PorcentajeSkills">85%</p>
                         </div>
-                        <div class="Angular_Skills Skills">
+                        <div class=" Skills">
                             <p class="NombreSkill">Angular</p>
-                            <span class="barraAzulSkill">&nbsp;</span>
+                            <span class="barraAzulSkill "><div class="BarraAzulFinal Angular_Skills">&nbsp;</div></span>
                             <p class="PorcentajeSkills">70%</p>
                         </div>
-                        <div class="Wordpress_Skills Skills">
+                        <div class=" Skills">
                             <p class="NombreSkill">Wordpress</p>
-                            <span class="barraAzulSkill">&nbsp;</span>
+                            <span class="barraAzulSkill "><div class="BarraAzulFinal Wordpress_Skills">&nbsp;</div></span>
                             <p class="PorcentajeSkills">80%</p>
                         </div>
-                        <div class="UXUI_Skills Skills">
+                        <div class=" Skills">
                             <p class="NombreSkill">UX / UI</p>
-                            <span class="barraAzulSkill">&nbsp;</span>
+                            <span class="barraAzulSkill "><div class="BarraAzulFinal UXUI_Skills">&nbsp;</div></span>
                             <p class="PorcentajeSkills">80%</p>
                         </div>
                     </div>
@@ -166,7 +177,7 @@
 
             </div>
 
-            <div class="SectionElementosDisenador">
+            <div class="SectionElementosDisenador Fade-In">
                 <div class="SectionElemento UIUX">
                     <div class="imagenSectionelemento">
                         <svg class="LogoDisenoSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.67 66.66"><path d="M46.92,62.06H34.74a1.32,1.32,0,0,1-1.32-1.32H0v3.94a2,2,0,0,0,2,2h77.7a2,2,0,0,0,2-2V60.74H48.25A1.33,1.33,0,0,1,46.92,62.06Z" style="fill:#5bc5f2"/><path d="M40.83,53.38A26.69,26.69,0,1,0,14.15,26.69,26.72,26.72,0,0,0,40.83,53.38Zm0-16c-4.89-.17-6.07-3.26-6.36-4.81a14.46,14.46,0,0,0,1.77-3.13,8.59,8.59,0,0,0,2,1.27,6.77,6.77,0,0,0,2.54.61h0a6.74,6.74,0,0,0,2.54-.61,8.59,8.59,0,0,0,2-1.2,15.6,15.6,0,0,0,1.83,3.12C46.88,34.18,45.67,37.2,40.83,37.36Zm0-35a24.3,24.3,0,0,1,18.52,40c-.21-1.39-1-4.7-4.2-5.87L47.4,31.74A19.87,19.87,0,0,1,45.89,29a10.81,10.81,0,0,0,1.78-2.23.15.15,0,0,1,.13-.07.62.62,0,0,0,.27,0c.84-.21,1.73-1.93,2-2.45A7.71,7.71,0,0,0,51,20.52a1.54,1.54,0,0,0-1.06-1.4c1.69-5.88-.34-7.19-.89-7.43a.23.23,0,0,0-.23,0l-1.46,1.06-.09.06-.42.31-.15.11-1,.7a.23.23,0,0,0-.05.33,13.06,13.06,0,0,1,2.4,7.55.23.23,0,0,0,.23.24h.45a.23.23,0,0,0,.21-.15c.29-.74.54-1.43.74-2.06.32.09.48.34.53.79a7,7,0,0,1-.88,3.3,6.63,6.63,0,0,1-1.22,1.82.13.13,0,0,1-.22-.05l-.11-.28a.14.14,0,0,0-.25,0l-.26.48A8.83,8.83,0,0,1,43.11,30a6,6,0,0,1-2.27.56h0c-.14,0-4-.05-6.43-4.61l-.26-.48a.13.13,0,0,0-.24,0l-.11.28a.13.13,0,0,1-.22.05A6.41,6.41,0,0,1,32.34,24a7,7,0,0,1-.88-3.3c0-.46.21-.71.54-.8a18,18,0,0,0,.66,2.07.24.24,0,0,0,.22.15h.4a.23.23,0,0,0,.23-.26c-.62-6.08,4.12-4.59,4.51-4.46l0,0c5.2.46,6.63-2.67,6.81-3.13a.24.24,0,0,1,.06-.09L46.32,13l.62-.52,1.52-1.27a.24.24,0,0,0,.08-.25c-1.12-3.72-9.73-3.12-9.73-3.12-8,.85-7.86,7.34-7,11.25a1.51,1.51,0,0,0-1.12,1.41,7.82,7.82,0,0,0,.92,3.72c.25.52,1.15,2.24,2,2.45a.59.59,0,0,0,.26,0,.15.15,0,0,1,.14.07,10.52,10.52,0,0,0,1.69,2.15h0a18.6,18.6,0,0,1-1.5,2.86l-7.68,4.76c-3.16,1.17-4,4.48-4.19,5.87a24.3,24.3,0,0,1,18.51-40Z" style="fill:#5bc5f2"/><path d="M80.84,15.6H67.65c.25.6.48,1.22.69,1.84h9.09a.76.76,0,0,1,.76.76V57H3.48V18.2a.75.75,0,0,1,.75-.76h9.09c.21-.62.45-1.24.7-1.84H.83a.83.83,0,0,0-.83.83V58.87H81.67V16.43A.83.83,0,0,0,80.84,15.6Z" style="fill:#5bc5f2"/></svg>
@@ -197,19 +208,19 @@
                 </div>
             </div>
                 
-            <a class="Descargar_button button" href="">Descargar CV</a>
+            <a class="Descargar_button button Fade-In" href="">Descargar CV</a>
            
         </section>
 
         <section class="Proyectos" id="Proyectos">
-            <div class="TituloSection">
+            <div class="TituloSection Fade-In">
                 <h2>Proyectos</h2>
                 <span class="barraAzulTitulo">&nbsp;</span>
             </div>
 
             <div class="GrupoProyectos">
 
-                <div class="ProyectoCompleto Conclave">
+                <div class="ProyectoCompleto Fade-In Conclave">
                     <img src="images/Proyectos/ConclaveTeatro.jpg" alt="Conclave Teatro">
                     <h4>Conclave Teatro</h4>
                     <div class="LogosProyectos">
@@ -226,7 +237,7 @@
                     </div>
                 </div>
 
-                <div class="ProyectoCompleto ListaToDo">
+                <div class="ProyectoCompleto Fade-In ListaToDo">
                     <img src="images/Proyectos/ConclaveTeatro.jpg" alt="Lista ToDo">
                     <h4>Lista ToDo</h4>
                     <div class="LogosProyectos">
@@ -243,7 +254,7 @@
                     </div>
                 </div>
 
-                <div class="ProyectoCompleto VisionsAgile">
+                <div class="ProyectoCompleto Fade-In VisionsAgile">
                     <img src="images/Proyectos/VisionsAgile.jpg" alt="Visions Agile">
                     <h4>Visions Agile</h4>
                     <div class="LogosProyectos">
@@ -260,9 +271,9 @@
                     </div>
                 </div>
 
-                <div class="ProyectoCompleto JuegoTetris">
-                    <img src="images/Proyectos/ConclaveTeatro.jpg" alt="Juego Tetris">
-                    <h4>Juego Tetris</h4>
+                <div class="ProyectoCompleto Fade-In JuegoMazmorra">
+                    <img src="images/Proyectos/JuegoMazmorra.jpg" alt="Juego Mazmorra">
+                    <h4>Juego de la Mazmorra</h4>
                     <div class="LogosProyectos">
                         <div class="imagenGithub ImagencirculoProyecto">
                             <a href="#" target="_blank">
@@ -277,7 +288,7 @@
                     </div>
                 </div>
 
-                <div class="ProyectoCompleto TravelParadise">
+                <div class="ProyectoCompleto Fade-In TravelParadise">
                     <img src="images/Proyectos/TravelToParadise.jpg" alt="Travel to Paradise ">
                     <h4>Travel to Paradise </h4>
                     <div class="LogosProyectos">
@@ -294,7 +305,7 @@
                     </div>
                 </div>
 
-                <div class="ProyectoCompleto CVAlberto">
+                <div class="ProyectoCompleto Fade-In CVAlberto">
                     <img src="images/Proyectos/CVAlberto.jpg" alt="CV Alberto Benito">
                     <h4>Cv interactivo Alberto Benito</h4>
                     <div class="LogosProyectos">
@@ -311,7 +322,7 @@
                     </div>
                 </div>
 
-                <div class="ProyectoCompleto LibreriaCSS">
+                <div class="ProyectoCompleto Fade-In LibreriaCSS">
                     <img src="images/Proyectos/LibreriaCSS.jpg" alt="Libreria CSS">
                     <h4>Libreria CSS</h4>
                     <div class="LogosProyectos">
@@ -328,7 +339,7 @@
                     </div>
                 </div>
 
-                <div class="ProyectoCompleto GaleriaImagenes">
+                <div class="ProyectoCompleto Fade-In GaleriaImagenes">
                     <img src="images/Proyectos/GaleriaImagenes.jpg" alt="GaleriaImagenes">
                     <h4>Galería de imagenes</h4>
                     <div class="LogosProyectos">
@@ -341,19 +352,19 @@
         </section>
 
         <section class="Contacto" id="Contacto">
-            <div class="TituloSection">
+            <div class="TituloSection Fade-In">
                 <h2>Contacto</h2>
                 <span class="barraAzulTitulo">&nbsp;</span>
             </div> 
-            <div class="Datoscontacto">
+            <div class="Datoscontacto Fade-In">
                 <div class="ContactoTexto">
                     <p class="TextoContacto">Email</p>
                     <a class="EmailContacto" href="mailto:albertobenito92@gmail.com">albertobenito92@gmail.com</a>
-                    <p class="TextoContacto">¿Tiene alguna pregunta?</p>
-                    <a class="Preguntar_button button" href="">Contacto</a>
+                    
                 </div>
                 <div class="imgContacto">
-                    <img src="images/Proyectos/ConclaveTeatro.jpg" alt="Contacto alberto Benito">
+                    <p class="TextoContacto">¿Tiene alguna pregunta?</p>
+                    <a class="Preguntar_button button" href="">Contacto</a>
                 </div>
             </div>         
         </section>
@@ -363,6 +374,8 @@
         
     </main>
 
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/style.js"></script>
 </body>
 
 </html>

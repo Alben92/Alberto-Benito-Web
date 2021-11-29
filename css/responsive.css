@@ -1,0 +1,256 @@
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+	.menu-Left{
+		margin-left: -30%;
+	}
+
+	.contentMain{
+		padding-left: 0%;
+	}
+	.header__button{
+		width: 40%;
+	}
+
+	.Texto{
+		font-size: 1.4rem;
+	}
+
+	.FotoSkills{
+		flex-wrap: wrap;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.ContentFoto{
+		width: 70%;
+		margin-bottom: 2%;
+	}
+
+	.ContentSkills{
+		width: 100%;
+	}
+
+	.SectionElementosDisenador{
+		flex-wrap: wrap;
+	}
+
+	.SectionElemento{
+		width: 45%;
+		margin-bottom: 5%;
+	}
+
+	.SectionElemento h4{
+		font-size: 1.4rem;
+	}
+
+	.SectionElemento p{
+		font-size: 1.4rem;
+	}
+
+	.imagenSectionelemento{
+		width: 80px;
+		height: 80px;
+		margin-bottom: 0%;
+	}
+
+	.Descargar_button{
+		width: 40%;
+	}
+
+	.VerGaleria{
+		width: 60%;
+	}
+
+	.Datoscontacto{
+		flex-wrap: wrap;
+	}
+
+	.ContactoTexto{
+		width: 100%;
+	}
+
+	.imgContacto{
+		width: 100%;
+	}
+
+	.MenuOpen{
+		position: fixed;
+		width: 10%;
+		top: 3%;
+		right: 3%;
+		display: block;
+	}
+
+	.MenuClose{
+		position: absolute;
+		width: 10%;
+		top: 3%;
+		right: 3%;
+		display: block;
+	}
+
+	.LogoAB svg{
+		width: 30%;
+		margin: 10% auto 0;
+	}
+
+	.TextLogoAB{
+		font-size: 1.4rem;
+	}
+
+	.LinkMenu{
+		font-size: 2rem;
+	}
+
+	.Imagencirculo{
+		width: 130px;
+		height: 130px;
+	}
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+	section{
+		padding: 2% 8%;
+		margin-right: 0;
+	}
+	.menu-Left{
+		margin-left: -30%;
+	}
+
+	.tituloPrincipal{
+		font-size: 3rem;
+		margin-top: 2%;
+	}
+
+	.TituloSection h2{
+		font-size: 1.8rem;
+	}
+
+	.contentMain{
+		padding-left: 0%;
+	}
+	.header__button{
+		width: 40%;
+	}
+
+	.Texto{
+		font-size: 1.2rem;
+	}
+
+	.FotoSkills{
+		flex-wrap: wrap;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.ContentFoto{
+		width: 100%;
+		margin-bottom: 8%;
+		margin-top: 4%;
+	}
+
+	.ContentSkills{
+		width: 100%;
+	}
+
+	.SectionElementosDisenador{
+		flex-wrap: wrap;
+	}
+
+	.SectionElemento{
+		width: 100%;
+		margin-bottom: 5%;
+	}
+
+	.SectionElemento h4{
+		font-size: 1.2rem;
+		margin-bottom: 2%;
+	}
+
+	.SectionElemento p{
+		font-size: 1.2rem;
+	}
+
+	.imagenSectionelemento{
+		width: 80px;
+		height: 80px;
+		margin-bottom: 0%;
+	}
+
+	.barraAzulSkill{
+		width: 60%;
+	}
+
+	.PorcentajeSkills{
+		width: 10%;
+	}
+
+	.Descargar_button{
+		width: 70%;
+	}
+
+	.ProyectoCompleto{
+		width: 100%;
+	}
+
+	.ProyectoCompleto h4{
+		font-size: 1.2rem;
+	}
+
+	.VerGaleria{
+		width: 60%;
+	}
+
+	.Datoscontacto{
+		flex-wrap: wrap;
+	}
+
+	.ContactoTexto{
+		width: 100%;
+	}
+
+	.imgContacto{
+		width: 100%;
+	}
+
+	.MenuOpen{
+		position: fixed;
+		width: 10%;
+		top: 3%;
+		right: 3%;
+		display: block;
+	}
+
+	.MenuClose{
+		position: absolute;
+		width: 10%;
+		top: 3%;
+		right: 3%;
+		display: block;
+	}
+
+	.LogoAB svg{
+		width: 30%;
+		margin: 10% auto 0;
+	}
+
+	.TextLogoAB{
+		font-size: 1.4rem;
+	}
+
+	.LinkMenu{
+		font-size: 1.4rem;
+	}
+
+	.Imagencirculo{
+		width: 80px;
+		height: 80px;
+	}
+
+	.TextoContacto{
+		font-size: 1.2rem;
+	}
+}
