@@ -1,3 +1,25 @@
+//GALERIA DE IMAGENES
+/*var num = 1;
+function atras() {
+    console.log('atras');
+    num--;
+    if (num < 1) {
+        num = 3;
+        var foto=document.getElementById('foto');
+        foto.src="images/Galeria/foto"+num+".jpg";
+    };
+};
+function adelante() {
+    console.log('adelante');
+    num++;
+    var i;
+    if (num > 3) {
+        num = 1;
+        var foto=document.getElementById('foto');
+        foto.src="images/Galeria/foto"+num+".jpg";
+    }
+};*/
+
 $(document).ready(function(){
 
 	 /*CURSOR*/
@@ -12,19 +34,7 @@ $(document).ready(function(){
             cursor.classList.remove("cursorExpand");
         }, 500)
     });
-
-    /* FLECHA UP */
-    $(window).scroll(function(){
-    	if($(window).scrollTop() < 300){
-	    	$('.Flecha-Up').css('opacity', '0');
-	    }else{
-	    	$('.Flecha-Up').css('opacity', '1');
-	    };
-    }); 
-
-    $('.Flecha-Up').click(function(){
-    	$(window).scrollTop(0).slideDown("slow");
-    });
+  
 
     /* MENU OPEN RESPONSIVE*/
     var anchoCompleto = screen.width;
@@ -48,12 +58,49 @@ $(document).ready(function(){
     	});
     });
 
-    //MOSTRAR EN PANTALLA
+    //Galeria IMAGENES
+    var num = 1;
+    $('#atrasImagen').on('click', function(){
+        num--;
+        if(num < 1){
+            num = 10;
+        };
+        var foto=document.getElementById('foto');
+        foto.src="images/Galeria/foto"+num+".jpg";
+    });
 
+    $('#adelanteImagen').on('click', function(){
+        num++;
+        if(num > 10){
+            num = 1;
+        };
+        var foto=document.getElementById('foto');
+        foto.src="images/Galeria/foto"+num+".jpg";
+    });
+
+    $('.VerGaleria').on('click', function(){
+        $('#popUp').css({"display": "block"})
+    });
+
+    $('.closeButton').on('click', function(){
+        $('#popUp').css({"display": "none"})
+    });
+
+    
 
 
     /* EVENTOS SCROOL */
 	$(window).scroll( function(){
+        /* FLECHA UP */
+        if($(window).scrollTop() < 300){
+            $('.Flecha-Up').css('opacity', '0');
+        }else{
+            $('.Flecha-Up').css('opacity', '1');
+        };
+
+        $('.Flecha-Up').click(function(){
+            $(window).scrollTop(0).slideDown("slow");
+        });
 
 		/*FadeIN elementos */
 	 	$('.Fade-In').each( function(i){
