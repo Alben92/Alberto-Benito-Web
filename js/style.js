@@ -1,25 +1,3 @@
-//GALERIA DE IMAGENES
-/*var num = 1;
-function atras() {
-    console.log('atras');
-    num--;
-    if (num < 1) {
-        num = 3;
-        var foto=document.getElementById('foto');
-        foto.src="images/Galeria/foto"+num+".jpg";
-    };
-};
-function adelante() {
-    console.log('adelante');
-    num++;
-    var i;
-    if (num > 3) {
-        num = 1;
-        var foto=document.getElementById('foto');
-        foto.src="images/Galeria/foto"+num+".jpg";
-    }
-};*/
-
 $(document).ready(function(){
 
 	 /*CURSOR*/
@@ -79,11 +57,13 @@ $(document).ready(function(){
     });
 
     $('.VerGaleria').on('click', function(){
-        $('#popUp').css({"display": "block"})
+        $('#popUp').css({"display": "block"});
+        $('.overlay').css({"display": "block"});
     });
 
     $('.closeButton').on('click', function(){
         $('#popUp').css({"display": "none"})
+        $('.overlay').css({"display": "none"})
     });
 
     

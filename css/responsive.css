@@ -253,4 +253,23 @@
 	.TextoContacto{
 		font-size: 1.2rem;
 	}
+
+	#popUp{
+		width: 90%;
+		left: 48%;
+		padding: 1%;
+	}
+	.TitlePopUp{
+		font-size: 1rem;
+		margin-top: 10px;
+	}
+
+	.closeButton{
+		right: 2%;
+		margin-top: 10px;
+	}
+
+	.closeButton, #atrasImagen, #adelanteImagen{
+		font-size: 2rem;
+	}
 }
