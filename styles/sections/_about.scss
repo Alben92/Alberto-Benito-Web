@@ -2,13 +2,13 @@
 
 .card-section {
     background-color: $bg-card;
-    border: 1px solid $border-color;
+    border: 1px solid $accent-color;
     border-radius: $radius-card;
     padding: 2.5rem;
     transition: border-color 0.3s ease, transform 0.3s ease;
 
     &:hover {
-        border-color: $border-hover;
+        border-color: $accent-hover;
     }
 }
 

@@ -3,8 +3,9 @@
    ========================================== */
 
 // 1. Base / Reset & Variables
-@use './base/variables' as *;
+@use './base/variables';
 @use './base/reset';
+@use "./base/font";
 
 // 2. Componentes Reutilizables
 @use './components/buttons';
@@ -16,3 +17,4 @@
 @use './sections/stack';
 @use './sections/proyects';
 @use './sections/contact';
+@use './sections/site-web';
