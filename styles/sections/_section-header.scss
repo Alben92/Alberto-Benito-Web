@@ -1,0 +1,22 @@
+@use '../base/variables' as *;
+
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .section-title {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+        margin: 0;
+        color: $text-main;
+    }
+
+    .section-description {
+        color: $text-muted;
+        font-size: 1rem;
+        margin: 0;
+    }
+}

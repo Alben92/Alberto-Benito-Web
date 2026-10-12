@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "sass": "^1.105.1"
+  },
+  "scripts": {
+    "_comment": "Ejecuta 'npm run sass' para compilar el archivo SCSS en CSS",    
+    "sass": "sass --watch styles/main.scss:css/styles.css"
+  }
+}

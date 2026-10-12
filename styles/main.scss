@@ -1,0 +1,18 @@
+/* ==========================================
+   MAIN SCSS — ORQUESTADOR DE MÓDULOS
+   ========================================== */
+
+// 1. Base / Reset & Variables
+@use './base/variables' as *;
+@use './base/reset';
+
+// 2. Componentes Reutilizables
+@use './components/buttons';
+@use './components/navbar';
+
+// 3. Secciones del Portfolio
+@use './sections/hero';
+@use './sections/about';
+@use './sections/stack';
+@use './sections/proyects';
+@use './sections/contact';
